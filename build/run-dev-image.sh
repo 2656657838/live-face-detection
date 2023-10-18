@@ -1,0 +1,1 @@
+docker run -it --name face-tm -v $(pwd):/workspace  bywin.harbor.com:52/banyun/live-face-detection:v1.0.0-dev /bin/bash
