@@ -16,6 +16,7 @@ import random
 import cv2
 import time
 from engine.predict import Face2dKeypointPredictor
+from tool.logger import LOGGER as logger
 
 
 
@@ -197,10 +198,13 @@ class OperateDetect(object):
 
 def test():
     live_detector = OperateDetect()
-    frame = cv2.imread('./test.jpg')
+    images=[]
+    for i in range(1,11):
+        images.append(cv2.imread(f'data/image_{i}.jpg'))
+    # frame = cv2.imread('./test.jpg')
     #status:[1,2,3,4] eyes,mouth,sheck,nod
-    is_live = live_detector([frame],1)
-    print(is_live)
+    result = live_detector(images,1)
+    logger.info(result)
 
 
 
