@@ -3,3 +3,5 @@ WORKDIR /workspace
 
 RUN pip install imutils -i https://pypi.tuna.tsinghua.edu.cn/simple
 RUN pip install loguru -i https://pypi.tuna.tsinghua.edu.cn/simple
+# RUN pip install fastapi -i https://pypi.tuna.tsinghua.edu.cn/simple
+RUN pip install pydantic[dotenv] -i https://pypi.tuna.tsinghua.edu.cn/simple
