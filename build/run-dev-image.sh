@@ -1,1 +1,2 @@
-docker run -it --name face-tm -p 12727:80 -v $(pwd):/workspace -v $(pwd)/engine/face_2d_keypoints/cv_resnet_facedetection_scrfd10gkps:/mnt/workspace/.cache/modelscope/damo/cv_resnet_facedetection_scrfd10gkps bywin.harbor.com:52/banyun/live-face-detection:v1.0.1-dev /bin/bash 
+# docker run -it --name face-tm -p 12727:80 -v $(pwd):/workspace -v $(pwd)/engine/face_2d_keypoints/cv_resnet_facedetection_scrfd10gkps:/mnt/workspace/.cache/modelscope/damo/cv_resnet_facedetection_scrfd10gkps bywin.harbor.com:52/banyun/live-face-detection:v1.0.1-dev /bin/bash 
+docker run -it --name face-tm -p 12727:80 -v $(pwd):/workspace bywin.harbor.com:52/banyun/live-face-detection:v1.0.1-dev /bin/bash 

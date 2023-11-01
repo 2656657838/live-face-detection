@@ -4,10 +4,13 @@ import cv2
 import torch
 import numpy as np
 
-import kornia
 
 from core.logger import LOGGER as logger
 from core.config import settings
+from core.confEnv import confEnv
+confEnv('/opt/conda/lib/python3.8/site-packages/easycv/toolkit/modelscope/pipelines/face_2d_keypoints_pipeline.py')
+
+
 from engine import *
 
 

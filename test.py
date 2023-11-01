@@ -12,7 +12,7 @@ import time
 # 然后是[img_str1,img_str2]
 
 # 设置接口的基本URL
-base_url = "http://localhost:12727"
+base_url = "http://localhost:12728"
 def getByte(path):
     with open(path, 'rb') as f:
         img_byte = base64.b64encode(f.read())
@@ -24,7 +24,7 @@ def test_receive_signal():
 
     images=[]
     for i in range(1,30):
-        img_str = getByte(f'data/nod/image_{i}.jpg')
+        img_str = getByte(f'data/shake/image_{i}.jpg')
         images.append(img_str)
     # images.append(getByte('test.png'))
     

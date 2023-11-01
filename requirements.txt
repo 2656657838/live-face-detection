@@ -1,0 +1,12 @@
+packaging
+gast
+simplejson
+python-dateutil
+loguru
+addict
+yapf
+imgaug
+sortedcontainers
+jsonplus
+flask
+# pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple

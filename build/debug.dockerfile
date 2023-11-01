@@ -1,0 +1,1 @@
+RUN pip install pai-easycv==0.11.4

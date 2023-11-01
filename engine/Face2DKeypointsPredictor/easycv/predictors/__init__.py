@@ -1,0 +1,1 @@
+from .face_keypoint_predictor import FaceKeypointsPredictor
